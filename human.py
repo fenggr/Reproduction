@@ -7,15 +7,14 @@ Created on Fri Jan 10 16:02:14 2020
 @author: fenggr
 """
 
-class Human():
-    """
-    人类
-    """
+
+class Human:
+    """人类"""
     
     def __init__(self):
         self.__age__ = 0
 
-    def addAge(self):
+    def add_age(self):
         self.__age__ += 1
     
     def __Age__(self):
@@ -25,9 +24,7 @@ class Human():
     
 
 class Man(Human):
-    """
-    男人
-    """
+    """男人"""
     
     def __init__(self):
         super().__init__()
@@ -43,11 +40,10 @@ class Woman(Human):
         return self.__hy__
     
     def set_hy(self):
-        '''
+        """
         设置怀孕状态，True为怀孕
-        '''
+        """
         self.__hy__ = True
         
     hy = property(__get_hy__)
-    
-    
+
